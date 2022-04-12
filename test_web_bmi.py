@@ -7,7 +7,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 
 def test_firefox_session():
-   service = FirefoxService(executable_path="geckodriver.exe")
+   service = FirefoxService(executable_path=GeckoDriverManager().install())
    driver = webdriver.Firefox(service=service)
    driver.get("https://www.google.com")
    print(driver.title)
