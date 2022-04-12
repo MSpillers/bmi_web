@@ -1,16 +1,14 @@
 import pytest,urllib
+from flask_testing import LiveServerTestCase
 from app import create_app
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
-from selenium.webdriver.firefox.options import Options
 from webdriver_manager.firefox import GeckoDriverManager
 
 
 def test_firefox_session():
    service = FirefoxService(executable_path=GeckoDriverManager().install())
-   opts = Options()
-   opts.add_argument("--headless")
-   driver = webdriver.Firefox(options=opts)
+   driver = webdriver.Firefox(service=service)
    #driver.get("https://www.google.com")
    #print(driver.title)
    driver.quit()
