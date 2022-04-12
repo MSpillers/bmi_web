@@ -1,4 +1,5 @@
 def main():
+
     #Flags for while loops
 
     x=0 
@@ -20,6 +21,19 @@ def main():
         except  ValueError:
             print("Please Enter a Non-Zero Integer")
 
+    if height % 100 == height: 
+        #Finds the inches (h_inches) over the lowest "ten" value i.e. height = 53 , inches over tenth  = 3 
+        h_inches = height % 10
+
+        #Finds the number of feet(h_feet)  i.e. height = 53 , (53 - 3 ) / 10  = 5 
+        h_feet  = (height - h_inches) / 10
+    else: 
+        
+        h_inches = height % 100
+
+        h_feet = (height - h_inches) / 100
+
+
     #Loops until valid weight input is entered
     while y == 0:
 
@@ -35,34 +49,17 @@ def main():
         except ValueError:
             print("Please Enter a Non-Zero Integer")
 
-
-
-
-    #Displays entered values 
-    #print(f"Height : {h_feet}ft {h_inches}in  Weight: {weight}lbs")
-    
-    #user_bmi = calculate_bmi(h_feet,h_inches,weight)
-    #display_bmi(user_bmi)
-
-def calculate_bmi(height,weight):
-
-    if height % 100 == height: 
-        #Finds the inches (h_inches) over the lowest "ten" value i.e. height = 53 , inches over tenth  = 3 
-        h_inches = height % 10
-
-        #Finds the number of feet(h_feet)  i.e. height = 53 , (53 - 3 ) / 10  = 5 
-        h_feet  = (height - h_inches) / 10
-    else: 
-        
-        h_inches = height % 100
-
-        h_feet = (height - h_inches) / 100
-
-
-    
     #Converts the calculated height values back to integers as math operations convert them to float vals
     h_feet = int(h_feet)
     h_inches = int(h_inches)
+
+    #Displays entered values 
+    print(f"Height : {h_feet}ft {h_inches}in  Weight: {weight}lbs")
+    
+    user_bmi = calculate_bmi(h_feet,h_inches,weight)
+    display_bmi(user_bmi)
+
+def calculate_bmi(h_feet,h_inches,weight):
 
     #multiply the weight in pounds by the metric conversion factor
     kg_weight  = weight * 0.45 
