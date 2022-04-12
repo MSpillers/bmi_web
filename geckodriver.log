@@ -529,3 +529,30 @@ Read port: 52012
 1649799311921	Marionette	INFO	Stopped listening on port 52012
 JavaScript error: resource://services-settings/Utils.jsm, line 154: TypeError: NetworkError: Network request failed
 [Parent 38144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1649802116495	geckodriver	INFO	Listening on 127.0.0.1:58740
+1649802119545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "58741" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\mcfry\\AppData\\Local\\Temp\\rust_mozprofilealenBE"
+*** You are running in headless mode.
+1649802119751	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\mcfry\\AppData\\Local\\Temp\\rust_mozprofilealenBE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58741/devtools/browser/b901e389-bd38-41aa-a8af-ed16b41f0d2b
+1649802120517	Marionette	INFO	Listening on port 58761
+Read port: 58761
+1649802120538	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649802120550	Marionette	INFO	Stopped listening on port 58761
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1649802132481	geckodriver	INFO	Listening on 127.0.0.1:58773
+1649802135539	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "58774" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\mcfry\\AppData\\Local\\Temp\\rust_mozprofileG08OSe"
+*** You are running in headless mode.
+1649802135743	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\mcfry\\AppData\\Local\\Temp\\rust_mozprofileG08OSe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58774/devtools/browser/07b39803-796c-4ca2-acd8-05a81cb19101
+1649802136571	Marionette	INFO	Listening on port 58798
+Read port: 58798
+1649802136638	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649802136646	Marionette	INFO	Stopped listening on port 58798
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
