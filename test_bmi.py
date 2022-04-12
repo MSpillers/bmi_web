@@ -5,9 +5,9 @@ import pytest
 #Test cases using Weak N X 1 Boundary Testing
 
 # Testing Values UnderWeight
-test_info_kn = calculate_bmi(57,180)
-test_info_ob_under = calculate_bmi(411,89.0)
-test_info_cvb_under = calculate_bmi(411,89.5)
+test_info_kn = calculate_bmi(5,7,180)
+test_info_ob_under = calculate_bmi(4,11,89.0)
+test_info_cvb_under = calculate_bmi(4,11,89.5)
 
 @pytest.mark.parametrize("input,expected",[(test_info_kn['Category'],"Overweight"),(test_info_ob_under['Category'],"Underweight"),(test_info_cvb_under['Category'],"Normal")])
 def test_underweight_bmi(input,expected):
@@ -16,9 +16,9 @@ def test_underweight_bmi(input,expected):
 
 
 # Testing Values Normal
-test_info_kn = calculate_bmi(57,180)
-test_info_ob_under = calculate_bmi(59,164.5)
-test_info_cvb_under = calculate_bmi(59,165.0)
+test_info_kn = calculate_bmi(5,7,180)
+test_info_ob_under = calculate_bmi(5,9,164.5)
+test_info_cvb_under = calculate_bmi(5,9,165.0)
 
 #Test cases using Weak N X 1 Boundary Testing
 
@@ -29,9 +29,9 @@ def test_normal_weight_bmi(input,expected):
 
 
 # Testing Values Overweight
-test_info_kn = calculate_bmi(57,180)
-test_info_ob_under = calculate_bmi(59,198.0)
-test_info_cvb_under = calculate_bmi(59,198.5)
+test_info_kn = calculate_bmi(5,7,180)
+test_info_ob_under = calculate_bmi(5,9,198.0)
+test_info_cvb_under = calculate_bmi(5,9,198.5)
 
 #Test cases using Weak N X 1 Boundary Testing
 
