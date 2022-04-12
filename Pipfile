@@ -7,6 +7,10 @@ name = "pypi"
 pytest = "*"
 flask = "*"
 flask-wtf = "*"
+selenium = "*"
+webdriver-manager = "*"
+flask-testing = "*"
+nose2 = "*"
 
 [dev-packages]
 
