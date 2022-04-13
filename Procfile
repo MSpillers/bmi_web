@@ -1,1 +1,1 @@
-web: gunicorn wgsi:app --preload
+web: gunicorn app:app 
