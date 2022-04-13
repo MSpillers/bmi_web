@@ -12,6 +12,7 @@ webdriver-manager = "*"
 flask-testing = "*"
 nose2 = "*"
 gunicorn = "*"
+coverage = "*"
 
 [dev-packages]
 
