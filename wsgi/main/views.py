@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,request,redirect,url_for,session
-from app.main.forms import BMIForm
+from wsgi.main.forms import BMIForm
 from bmi import calculate_bmi
 
 main = Blueprint('main',__name__,template_folder='templates')

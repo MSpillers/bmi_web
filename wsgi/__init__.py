@@ -7,7 +7,7 @@ def create_app():
         SECRET_KEY=os.getenv("FLASK_SECRET_KEY") or 'prc9FWjeLYh_KsPGm0vJcg'
     )
 
-    from app.main.views import main
+    from wsgi.main.views import main
     app.register_blueprint(main)
 
     return app

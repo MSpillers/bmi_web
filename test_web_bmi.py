@@ -1,5 +1,5 @@
 import pytest,urllib
-from app import create_app
+from wsgi import create_app
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.options import Options
